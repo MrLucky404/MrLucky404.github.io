@@ -27,10 +27,10 @@ loop = asyncio.get_event_loop()
 
 
 
-api_id = 1587008
-api_hash = 'd89b86ce7d0560dc671e354980a7a503'
-phone = '+5353029203'
-bot_token = '1221576766:AAHnxUJHuQUp3CuIsjdCMOZeuKyKKaui7vw'
+api_id = id
+api_hash = hash
+phone = phon
+bot_token = token
 
 client=TelegramClient(phone,api_id,api_hash)
 bot = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)

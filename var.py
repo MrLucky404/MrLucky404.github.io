@@ -1,0 +1,4 @@
+phon = '+5353029203'
+Token = '1221576766:AAHnxUJHuQUp3CuIsjdCMOZeuKyKKaui7vw'
+apiID = 1587008
+apiHash = 'd89b86ce7d0560dc671e354980a7a503'

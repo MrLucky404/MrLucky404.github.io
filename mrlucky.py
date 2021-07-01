@@ -41,7 +41,7 @@ Hello there """ + name + """, I'm F.R.Y.D.A.Y""")
         await event.reply("Que tu quieres?")
     elif "/slap" == msg:
         await event.reply("🍑")
-    elif "/siono" == msg:
+    elif "/siono" in msg:
         op = random.randint(0,8)
         answ = siono[op]
         await event.reply(answ)

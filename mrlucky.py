@@ -25,7 +25,7 @@ async def any_message_arrived_handler(event):
     name = sender.first_name
     if '/start' == event.raw_text:
             await event.reply("""\
-Hello there """ + name + """, I'm F.R.Y.D.A.Y"""
+Hello there """ + name + """, I'm F.R.Y.D.A.Y""")
     elif '/help' == event.raw_text:
         await event.reply("""\
 List of commands available:

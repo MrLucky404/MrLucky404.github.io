@@ -16,6 +16,17 @@ bot = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)
 
 bot.start()
 
+siono = {
+  1: "Si",
+  2: "No",
+  3: "Umju",
+  4: "Es difícil dar una respuesta exacta, creo que debemos tomar la pregunta con cautela y analizar los pormenores que pueden parecernos intrascendentes pero que, a la hora de tomar una decisión coherente, pueden torcer la balanza.",
+  5: "Me atrevo a decir que si.",
+  6: "La mayoría de las veces recurre a ese tipo de prácticas.",
+  7: "Ni loco.",
+  8: "Lo único que se es que es gay 🏳‍🌈🏳‍🌈🏳‍🌈."
+}
+
 #Bot code
 @bot.on(events.NewMessage)
 async def any_message_arrived_handler(event):
@@ -30,6 +41,10 @@ Hello there """ + name + """, I'm F.R.Y.D.A.Y""")
         await event.reply("Que tu quieres?")
     elif "/slap" == msg:
         await event.reply("🍑")
+    elif "/siono" == msg:
+        op = random.randint(0,8)
+        answ = siono[op]
+        await event.reply(answ)
     else:
         await event.reply(msg)
 

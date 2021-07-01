@@ -26,19 +26,10 @@ async def any_message_arrived_handler(event):
     if '/start' == event.raw_text:
             await event.reply("""\
 Hello there """ + name + """, I'm F.R.Y.D.A.Y""")
-    elif '/help' == event.raw_text:
-        await event.reply("""\
-List of commands available:
-/set_off - Disable hunt script\n/set_on - Enable hunt script
-/intervene - View last intervene date
-/status - View Hunt Script status
-/min_limit [level] - Set minimum level of mobs accepted
-/max_limit [level] - Set maximum level of mobs accepted
-
-*to check that the intervene script is running correctly type /help in @chtwrsbot
-""")
     elif "@coffee_breaks_bot" in msg:
         await event.reply("Que tu quieres?")
+    elif "/slap" == msg:
+        await event.reply("🍑")
     else:
         await event.reply(msg)
 

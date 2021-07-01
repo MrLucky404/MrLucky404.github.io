@@ -42,12 +42,9 @@ Hello there """ + name + """)
     elif "/slap" == msg:
         await event.reply("🍑")
     elif "/siono" in msg:
-        if "/siono" == msg:
-            await event.reply("ajdsfvlsdfsd")
-        else:
-            op = random.randint(0,8)
-            answ = siono[op]
-            await event.reply(answ)
+        op = random.randint(0,8)
+        answ = siono[op]
+        await event.reply(answ)
     else:
         await event.reply(msg)
 

@@ -37,6 +37,8 @@ List of commands available:
 
 *to check that the intervene script is running correctly type /help in @chtwrsbot
 """)
+    elif "@coffee_breaks_bot" in msg:
+        await event.reply("Que tu quieres?")
     else:
         await event.reply(msg)
 

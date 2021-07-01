@@ -40,6 +40,8 @@ async def any_message_arrived_handler(event):
         await event.reply("Que tu quieres?")
     elif "/slap" == msg:
         await event.reply("🍑")
+    elif "hola" in msg or "Hola" in msg or "Hello" in msg:
+        await event.reply("Hola guap@ 🌚🌚")
     elif "/siono" in msg:
         if "/siono" == msg:
             await event.reply("¿Cúal es la pregunta genio, ahora tengo que ser adivino?")

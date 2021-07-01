@@ -24,7 +24,8 @@ siono = {
   5: "Me atrevo a decir que si.",
   6: "La mayoría de las veces recurre a ese tipo de prácticas.",
   7: "Ni loco.",
-  8: "Lo único que se es que es gay 🏳‍🌈🏳‍🌈🏳‍🌈."
+  8: "Lo único que se es que es gay 🏳‍🌈🏳‍🌈🏳‍🌈.",
+  9: "Williams es pato... 🦆🦆"
 }
 
 #Bot code
@@ -36,7 +37,7 @@ async def any_message_arrived_handler(event):
     name = sender.first_name
     if '/start' == event.raw_text:
             await event.reply("""\
-Hello there """ + name + """, I'm F.R.Y.D.A.Y""")
+Hello there """ + name + """)
     elif "@coffee_breaks_bot" in msg:
         await event.reply("Que tu quieres?")
     elif "/slap" == msg:
@@ -45,7 +46,7 @@ Hello there """ + name + """, I'm F.R.Y.D.A.Y""")
         if "/siono" == msg:
             await event.reply("¿Cúal es la pregunta genio, se supone que soy adivino?")
         else:
-            op = random.randint(1,8)
+            op = random.randint(1,9)
             answ = siono[op]
             await event.reply(answ)
     else:

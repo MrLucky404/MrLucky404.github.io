@@ -24,7 +24,12 @@ siono = {
   5: "Me atrevo a decir que si.",
   6: "La mayoría de las veces recurre a ese tipo de prácticas.",
   7: "Ni loco.",
-  8: "Lo único que se es que es gay 🏳‍🌈🏳‍🌈🏳‍🌈."
+  8: "Lo único que se es que es gay 🏳‍🌈🏳‍🌈🏳‍🌈.",
+  9: "Solo se que por aquí alguien es 🦆...",
+  10: "WTF!!!!",
+  11: "Rómpete Mochiiiiiii!!!",
+  12: "Al igual que tú",
+  13: "OOhh yeaaa",
 }
 
 #Bot code
@@ -46,7 +51,7 @@ async def any_message_arrived_handler(event):
         if "/siono" == msg:
             await event.reply("¿Cúal es la pregunta genio, ahora tengo que ser adivino?")
         else:
-            op = random.randint(1,8)
+            op = random.randint(1,13)
             answ = siono[op]
             await event.reply(answ)
     else:

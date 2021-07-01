@@ -42,9 +42,12 @@ Hello there """ + name + """, I'm F.R.Y.D.A.Y""")
     elif "/slap" == msg:
         await event.reply("🍑")
     elif "/siono" in msg:
-        op = random.randint(0,8)
-        answ = siono[op]
-        await event.reply(answ)
+        if "/siono" == msg:
+            await event.reply("¿Cúal es la pregunta genio, se supone que soy adivino?")
+        else:
+            op = random.randint(1,8)
+            answ = siono[op]
+            await event.reply(answ)
     else:
         await event.reply(msg)
 

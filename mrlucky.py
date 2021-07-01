@@ -36,19 +36,18 @@ async def any_message_arrived_handler(event):
     name = sender.first_name
     if '/start' == event.raw_text:
             await event.reply("""\
-Hello there """ + name + """)
+Hello there """ + name + """, I'm F.R.Y.D.A.Y""")
     elif "@coffee_breaks_bot" in msg:
         await event.reply("Que tu quieres?")
     elif "/slap" == msg:
         await event.reply("🍑")
     elif "/siono" in msg:
-        if "/siono" == msg:
-            await event.reply("¿Cúal es la pregunta genio, se supone que soy adivino?")
-        else:
-            op = random.randint(1,8)
-            answ = siono[op]
-            await event.reply(answ)
+        op = random.randint(0,8)
+        answ = siono[op]
+        await event.reply(answ)
     else:
         await event.reply(msg)
+
+        
 
 loop.run_forever()

@@ -41,9 +41,12 @@ async def any_message_arrived_handler(event):
     elif "/slap" == msg:
         await event.reply("🍑")
     elif "/siono" in msg:
-        op = random.randint(1,8)
-        answ = siono[op]
-        await event.reply(answ)
+        if "/siono" == msg:
+            await event.reply("¿Cúal es la pregunta genio, ahora tengo que ser adivino?")
+        else:
+            op = random.randint(1,8)
+            answ = siono[op]
+            await event.reply(answ)
     else:
         await event.reply(msg)
 
